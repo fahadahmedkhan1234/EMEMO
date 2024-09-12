@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.571">
+<testcase classname="Create A Memo" name="Open url and select form" time="28.158">
+<failure message="no such alert&#10;  (Session info: chrome=123.0.6312.86)&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_391'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [76f208971eedfcab68996fe219a547c7, getAlertText {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\AFIFA~1.NAQ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63539/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 76f208971eedfcab68996fe219a547c7" type="org.openqa.selenium.NoAlertPresentException"><![CDATA[When open url "https://uatsharepoint.bankislami.com.pk/_login/default.aspx?ReturnUrl=%2fsites%2fememo%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%252Fsites%252Fememo%252FSitePages%252Fdashboard%252Easpx&Source=%2Fsites%2Fememo%2FSitePages%2Fdashboard%2Easpx".passed
+And click on dropdown and select form.......................................passed
+Then enter login details....................................................passed
+Then click on sign in button................................................passed
+Then open New EMeme and fill the form and click on submit button............failed
+And click on My EMemo.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_391'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76f208971eedfcab68996fe219a547c7, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\AFIFA~1.NAQ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63539/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76f208971eedfcab68996fe219a547c7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1079)
+	at pageObjects.baseClass.Accept_Alert(baseClass.java:61)
+	at pageObjects.EMemo.Submit_Btn(EMemo.java:63)
+	at pageObjects.EMemo.ProcessMultipleRecords(EMemo.java:96)
+	at stepDefinitions.steps.open_new_e_meme_and_fill_the_form_and_click_on_submit_button(steps.java:107)
+	at ✽.open New EMeme and fill the form and click on submit button(file:///C:/Users/afifa.naqi/IdeaProjects/SharePoint-ReadMultipleData/./src/test/resources/Features/EMemo.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
